@@ -1,0 +1,289 @@
+/* Estilos para el Componente de Calendario Unificado */
+
+/* Estilos generales del calendario */
+.evento-calendario {
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-radius: 4px;
+    padding: 2px 4px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.evento-calendario:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilos para las celdas del calendario */
+.fc-daygrid-day {
+    transition: background-color 0.2s ease;
+}
+
+.fc-daygrid-day:hover {
+    background-color: rgba(26, 188, 156, 0.05) !important;
+}
+
+/* Estilos para los botones del header */
+.fc-button {
+    background-color: #1abc9c !important;
+    border-color: #1abc9c !important;
+    color: white !important;
+    text-transform: capitalize !important;
+    font-weight: 500 !important;
+    padding: 0.5rem 1rem !important;
+    border-radius: 0.5rem !important;
+    transition: all 0.2s ease !important;
+}
+
+.fc-button:hover {
+    background-color: #16a085 !important;
+    border-color: #16a085 !important;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(26, 188, 156, 0.3);
+}
+
+.fc-button:active,
+.fc-button:focus {
+    background-color: #16a085 !important;
+    border-color: #16a085 !important;
+    box-shadow: none !important;
+}
+
+.fc-button-active {
+    background-color: #16a085 !important;
+    border-color: #16a085 !important;
+}
+
+/* Estilos para el título */
+.fc-toolbar-title {
+    font-size: 1.5rem !important;
+    font-weight: 700 !important;
+    color: #2c3e50 !important;
+}
+
+/* Estilos para los días de la semana */
+.fc-col-header-cell {
+    background-color: #f8f9fa !important;
+    font-weight: 600 !important;
+    color: #2c3e50 !important;
+    text-transform: uppercase !important;
+    font-size: 0.75rem !important;
+    padding: 0.75rem 0 !important;
+}
+
+/* Estilos para los números de día */
+.fc-daygrid-day-number {
+    font-weight: 600 !important;
+    color: #2c3e50 !important;
+    padding: 0.5rem !important;
+}
+
+/* Estilos para días fuera del mes actual */
+.fc-day-other .fc-daygrid-day-number {
+    color: #bdc3c7 !important;
+}
+
+/* Estilos para el link "más" */
+.fc-more-link {
+    color: #1abc9c !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+    transition: all 0.2s ease !important;
+}
+
+.fc-more-link:hover {
+    color: #16a085 !important;
+    text-decoration: underline !important;
+}
+
+/* Estilos para la vista de lista */
+.fc-list-event:hover td {
+    background-color: rgba(26, 188, 156, 0.1) !important;
+}
+
+.fc-list-event-dot {
+    border-color: #1abc9c !important;
+}
+
+/* Estilos para la vista de semana/día */
+.fc-timegrid-slot {
+    height: 3rem !important;
+}
+
+.fc-timegrid-slot-label {
+    font-size: 0.75rem !important;
+    color: #7f8c8d !important;
+}
+
+.fc-timegrid-event {
+    border-radius: 4px !important;
+    padding: 2px 4px !important;
+}
+
+/* Estilos para el indicador de "ahora" */
+.fc-timegrid-now-indicator-line {
+    border-color: #e74c3c !important;
+    border-width: 2px !important;
+}
+
+.fc-timegrid-now-indicator-arrow {
+    border-color: #e74c3c !important;
+}
+
+/* Estilos para días no laborables (domingos) */
+.fc-day-sun {
+    background-color: #fef5f5 !important;
+}
+
+/* Estilos para eventos en diferentes estados */
+.evento-nueva-asignacion {
+    background-color: #d1fae5 !important;
+    border-color: #10b981 !important;
+    color: #047857 !important;
+}
+
+.evento-esta-asignacion {
+    background-color: #d1fae5 !important;
+    border-color: #10b981 !important;
+    color: #047857 !important;
+}
+
+.evento-instructor {
+    background-color: #fef3c7 !important;
+    border-color: #f59e0b !important;
+    color: #92400e !important;
+}
+
+.evento-ambiente {
+    background-color: #dbeafe !important;
+    border-color: #3b82f6 !important;
+    color: #1e40af !important;
+}
+
+.evento-combinado {
+    background-color: #e9d5ff !important;
+    border-color: #a855f7 !important;
+    color: #6b21a8 !important;
+}
+
+/* Estilos para modales */
+#modalDetallesDiaCalendario,
+#modalEventoCalendario {
+    animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#modalDetallesDiaCalendario > div,
+#modalEventoCalendario > div {
+    animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Estilos responsive */
+@media (max-width: 768px) {
+    .fc-toolbar {
+        flex-direction: column !important;
+        gap: 0.5rem !important;
+    }
+    
+    .fc-toolbar-chunk {
+        display: flex !important;
+        justify-content: center !important;
+        width: 100% !important;
+    }
+    
+    .fc-toolbar-title {
+        font-size: 1.25rem !important;
+        text-align: center !important;
+    }
+    
+    .fc-button {
+        padding: 0.375rem 0.75rem !important;
+        font-size: 0.875rem !important;
+    }
+    
+    .fc-daygrid-day-number {
+        font-size: 0.875rem !important;
+    }
+    
+    .evento-calendario {
+        font-size: 0.625rem !important;
+    }
+}
+
+/* Estilos para impresión */
+@media print {
+    .fc-button,
+    .fc-toolbar-chunk:first-child,
+    .fc-toolbar-chunk:last-child {
+        display: none !important;
+    }
+    
+    .fc-toolbar-title {
+        text-align: center !important;
+        width: 100% !important;
+    }
+    
+    .evento-calendario {
+        page-break-inside: avoid !important;
+    }
+}
+
+/* Estilos para accesibilidad */
+.fc-button:focus-visible {
+    outline: 2px solid #1abc9c !important;
+    outline-offset: 2px !important;
+}
+
+.evento-calendario:focus-visible {
+    outline: 2px solid #1abc9c !important;
+    outline-offset: 2px !important;
+}
+
+/* Estilos para el scroll en modales */
+#modalDetallesDiaCalendario > div,
+#modalEventoCalendario > div {
+    scrollbar-width: thin;
+    scrollbar-color: #1abc9c #f1f1f1;
+}
+
+#modalDetallesDiaCalendario > div::-webkit-scrollbar,
+#modalEventoCalendario > div::-webkit-scrollbar {
+    width: 8px;
+}
+
+#modalDetallesDiaCalendario > div::-webkit-scrollbar-track,
+#modalEventoCalendario > div::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+#modalDetallesDiaCalendario > div::-webkit-scrollbar-thumb,
+#modalEventoCalendario > div::-webkit-scrollbar-thumb {
+    background: #1abc9c;
+    border-radius: 10px;
+}
+
+#modalDetallesDiaCalendario > div::-webkit-scrollbar-thumb:hover,
+#modalEventoCalendario > div::-webkit-scrollbar-thumb:hover {
+    background: #16a085;
+}

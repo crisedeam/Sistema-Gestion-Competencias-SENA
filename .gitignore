@@ -1,0 +1,46 @@
+# Archivos de configuración local
+config.php
+
+# Archivos de sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Archivos de IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Archivos temporales
+*.tmp
+*.temp
+*.log
+*.swp
+*.swo
+*~
+
+# Archivos de backup
+*.bak
+*.backup
+*.old
+
+# Carpetas de dependencias (si se usan en el futuro)
+vendor/
+node_modules/
+
+# Archivos de sesión PHP
+sessions/
+
+# Archivos de caché
+cache/
+*.cache
+
+# Archivos de uploads (si se implementan)
+uploads/
+files/
+
+# Variables de entorno
+.env
+.env.local
+.env.*.local
