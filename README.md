@@ -596,3 +596,5 @@ Desarrollado para el SENA (Servicio Nacional de Aprendizaje) como sistema integr
 - ✅ Limpieza de código y eliminación de archivos no utilizados
 - ✅ Documentación completa del componente de calendario
 - ✅ Manual de usuario con 64 capturas de pantalla
+#   S i s t e m a - G e s t i o n - C o m p e t e n c i a s - S E N A  
+ 
