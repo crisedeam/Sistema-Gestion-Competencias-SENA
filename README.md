@@ -426,12 +426,7 @@ Cree el directorio `views/mimodelo/` y agregue las plantillas correspondientes (
 
 ---
 
-## 📞 Soporte
 
-Si encuentra fallos o requiere de mejoras en la plataforma:
-1.  Consulte la documentación en el [Manual de Usuario](MANUAL_USUARIO_PROGSENA_CORREGIDO.html).
-2.  Revise los requisitos e historial de historias de usuario.
-3.  Cree un *Issue* en el panel de control del repositorio en GitHub.
 
 ---
 
