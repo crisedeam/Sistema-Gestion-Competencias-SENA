@@ -22,7 +22,7 @@ Este proyecto se adhiere a un código de conducta. Al participar, se espera que 
 
 1. **Fork el repositorio**
    ```bash
-   git clone https://github.com/tu-usuario/ProgSENA.git
+   git clone https://github.com/crisedeam/Sistema-Gestion-Competencias-SENA.git
    cd ProgSENA
    ```
 
