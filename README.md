@@ -437,5 +437,5 @@ Este sistema es software propietario y de uso educativo desarrollado específica
 ---
 
 <p align="center">
-  <sub>Desarrollado para el Servicio Nacional de Aprendizaje (SENA). Última actualización: Diciembre 2024.</sub>
+  <sub>Desarrollado por aprendices de el Servicio Nacional de Aprendizaje y para el Servicio Nacional de Aprendizaje (SENA). Última actualización: Marzo 2026.</sub>
 </p>
